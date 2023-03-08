@@ -2,4 +2,4 @@
 
 **AWS cloud exercises and developments**
 
-1. AWS_CLI+Bash
+1. [AWS_CLI+Bash](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_CLI%2BBash.md)
