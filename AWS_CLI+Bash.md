@@ -57,6 +57,6 @@ Básicamente con el mismo objetivo, usar los dos comandos **ec2 describe-regions
 
 # **> RETO 2** 
 
-Script que muestre el número máximo de instancias EC2 de tipo T que tenemos permitido crear en la región de North Virginia
+Crear un script que muestre el número máximo de instancias EC2 de tipo T que tenemos permitido crear en la región de North Virginia
 (AWS Cli permite consultar las “quotas” que tenemos asignadas por cada servicio).
 
