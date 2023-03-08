@@ -28,9 +28,9 @@ y con **--output text** que la salida sea texto.
 3. Usamos el comando **xargs** para utilizar como argumento la salida del primer comando, y con la opción **-I** 
 para reemplazar los valores **{}**.
 
-4. Finalmente usamos el comando **describe-availability-zones** con la opción **--region** para ir solicitando las AZ por cada region. 
-Filtraremos los resultados con la opción **--query**, en este caso dos columnas para que se visualice region y sus AZ. 
-En este caso, la salida con la opción **--output** en tabla para que se visualice de forma más cómoda.
+4. Finalmente usamos el comando **describe-availability-zones** con la opción **--region** para ir solicitando las AZ por
+cada region. Filtraremos los resultados con la opción **--query**, en este caso dos columnas para que se visualice region 
+y sus AZ. En este caso, la salida con la opción **--output** en tabla para que se visualice de forma más cómoda.
 
 5. Se podría añadir la opción **2> /dev/null** para evitar los mensajes de error ocurridos por fallos de autorización.
 ```
