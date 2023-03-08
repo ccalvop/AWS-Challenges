@@ -11,7 +11,7 @@ xargs -I {} aws ec2 describe-availability-zones --region {} --query "Availabilit
 
 **_ec2 describe-regions_** - Describes the Regions that are enabled for your account
 **_ec2 describe-availability-zones_** - Describes the Availability Zones, Local Zones, and Wavelength Zones that are available to you.
-xargs - Takes in input and executes your chosen command on it
+**_xargs_** - Takes in input and executes your chosen command on it
 
 1- Solicitamos a aws las regiones mediante el comando describe-regions , de todas las regiones con la opción --all-regions, 
 filtramos la respuesta con la opción --query (en este caso solo queremos el nombre de las regiones “RegionName”) y con --output text que la salida sea texto.
