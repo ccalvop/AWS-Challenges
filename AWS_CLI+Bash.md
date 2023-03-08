@@ -1,7 +1,10 @@
+![AWS_CLI_+_BASH](https://user-images.githubusercontent.com/126183973/223797292-3622deb1-face-47a9-b925-9b27d986cbaa.png)
+
 **> RETO:** 
 Utilizando Cloud Shell crear un script (Bash + AWS CLI) que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas.
 
 >> SOLUCIÓN:
+
 aws ec2 describe-regions --all-regions --query "Regions[].{Name:RegionName}" --output text | 
 xargs -I {} aws ec2 describe-availability-zones --region {} --query "AvailabilityZones[].{Zone:ZoneName, Region:RegionName}" --output table
 
