@@ -24,6 +24,7 @@ En este caso la salida conla opción **--output** en tabla para que se visualice
 5. Se podría añadir la opción **2> /dev/null** para evitar los mensajes de error ocurridos por fallos de autorización.
 
 **_ec2 describe-regions_** - Describes the Regions that are enabled for your account
+
 **_ec2 describe-availability-zones_** - Describes the Availability Zones, Local Zones, and Wavelength Zones that are available to you 
 
 **_xargs_** - Takes in input and executes your chosen command on it
