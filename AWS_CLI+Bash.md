@@ -15,6 +15,8 @@ Crear un script utilizando Cloud Shell que muestre cada una de las regiones de A
 
 **> SOLUCIÓN: _SCRIPT_**
 
+![script1](https://user-images.githubusercontent.com/126183973/223822385-a8381888-f752-4005-86fc-f6905133b9ab.png)
+
 `aws ec2 describe-regions --all-regions --query "Regions[].{Name:RegionName}" --output text | 
 xargs -I {} aws ec2 describe-availability-zones --region {} --query "AvailabilityZones[].{Zone:ZoneName, Region:RegionName}" --output table`
 
