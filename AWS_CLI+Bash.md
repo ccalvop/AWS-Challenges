@@ -18,6 +18,7 @@ Crear un script utilizando Cloud Shell que muestre cada una de las regiones de A
 `aws ec2 describe-regions --all-regions --query "Regions[].{Name:RegionName}" --output text | 
 xargs -I {} aws ec2 describe-availability-zones --region {} --query "AvailabilityZones[].{Zone:ZoneName, Region:RegionName}" --output table`
 
+```
 1. Solicitamos a aws las regiones mediante el comando **describe-regions** , de todas las regiones con la opción **--all-regions**, 
 filtramos la respuesta con la opción **--query** (en este caso solo queremos el nombre de las regiones “**RegionName**”) y con **--output text** 
 que la salida sea texto
@@ -31,6 +32,7 @@ Filtraremos los resultados con la opción **--query**, en este caso dos columnas
 En este caso la salida conla opción **--output** en tabla para que se visualice de forma más cómoda
 
 5. Se podría añadir la opción **2> /dev/null** para evitar los mensajes de error ocurridos por fallos de autorización.
+```
 
 **_ec2 describe-regions_** - Describes the Regions that are enabled for your account
 
@@ -48,8 +50,8 @@ _(*)Guardamos los comandos en un archivo y añadimos una primera línea `#!/bin/
 while read RegionName; do aws ec2 describe-availability-zones --region $RegionName --query
 "AvailabilityZones[].{Region:RegionName, Zone:ZoneName}" --output table; done`
 
-En este caso encadenamos con **pipes** diferentes opciones de bash (grep, awk, condicionales para el segundo comando). 
-Básicamente con el mismo objetivo, usar los dos comandos **ec2 describe-regions** y **ec2 describe-availability-zones**
+En este caso encadenamos con **pipes** diferentes opciones de bash (**grep**, **awk**, **condicionales** para el segundo comando). 
+Básicamente con el mismo objetivo usando los dos comandos **ec2 describe-regions** y **ec2 describe-availability-zones**.
 
 :pager: **CAPTURAS DE PANTALLA**
 
