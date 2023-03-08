@@ -5,9 +5,7 @@ Lo primero vamos a definir CLI y Bash antes de resolver dos pequeños retos:
 **CLI** significa Command Line Interface, que en español se traduce como Interfaz de Línea de Comandos. En el contexto de AWS (Amazon Web Services), CLI es una herramienta que permite interactuar con los servicios de AWS a través de la línea de comandos de un terminal.
 
 **BASH** es una abreviatura de "Bourne-Again SHell", lo que significa que es una versión mejorada del shell original de Unix, llamado "sh" o Bourne shell.
-Bash es un shell o intérprete de comandos de Unix y sistemas basados en Unix, como Linux. Shell se refiere a la interfaz de línea de comandos (CLI) que permite a los usuarios interactuar con el sistema operativo a través de comandos de texto. Bash se puede considerar como un lenguaje de scripting, se utiliza principalmente para escribir scripts de shell que automatizan tareas en sistemas basados en Unix.
-
-Los scripts de shell son secuencias de comandos
+Bash es un shell o intérprete de comandos de Unix y sistemas basados en Unix, como Linux. Shell se refiere a la interfaz de línea de comandos (CLI) que permite a los usuarios interactuar con el sistema operativo a través de comandos de texto. Bash se puede considerar como un lenguaje de scripting, se utiliza principalmente para escribir scripts de shell que automatizan tareas en sistemas basados en Unix. _*Los scripts de shell son secuencias de comandos._
 
 # **> RETO 1** 
 
