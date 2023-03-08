@@ -1,4 +1,4 @@
-> RETO: 
+**> RETO:** 
 Utilizando Cloud Shell crear un script (Bash + AWS CLI) que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas.
 
 >> SOLUCIÓN:
@@ -8,7 +8,6 @@ xargs -I {} aws ec2 describe-availability-zones --region {} --query "Availabilit
 ec2 describe-regions - Describes the Regions that are enabled for your account
 ec2 describe-availability-zones - Describes the Availability Zones, Local Zones, and Wavelength Zones that are available to you.
 xargs - Takes in input and executes your chosen command on it
-
 
 1- Solicitamos a aws las regiones mediante el comando describe-regions , de todas las regiones con la opción --all-regions, 
 filtramos la respuesta con la opción --query (en este caso solo queremos el nombre de las regiones “RegionName”) y con --output text que la salida sea texto.
@@ -22,3 +21,15 @@ Filtraremos los resultados con la opción --query , en este caso doscolumnas par
 En este caso la salida conla opción --output en tabla para que se visualice de forma más cómoda.
 
 5- Se podría añadir la opción 2> /dev/null para evitar los mensajes de error ocurridos por fallos de autorización.
+
+(*)Para guardar los comandos como un script, añadimos una primera línea 
+#!/bin/bash 
+para que pueda ser ejecutado (bash).
+
+>>> OTRAS POSIBLES SOLUCIONES:
+ec2 describe-regions --all-regions | grep "RegionName" | awk '{print $2}' | tr -d "\"," | 
+while read RegionName; do aws ec2 describe-availability-zones --region $RegionName --query
+"AvailabilityZones[].{Region:RegionName, Zone:ZoneName}" --output table; done
+
+En este caso encadenamos con pipes diferentes opciones de bash (grep, awk, condicionales para el segundo comando). 
+Básicamente con el mismo objetivo, usar los dos comandos ec2 describe-regions y ec2 describe-availability-zones
