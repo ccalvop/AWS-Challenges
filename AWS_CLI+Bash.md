@@ -21,16 +21,16 @@ xargs -I {} aws ec2 describe-availability-zones --region {} --query "Availabilit
 ```
 1. Solicitamos a aws las regiones mediante el comando **describe-regions** , de todas las regiones con la opción **--all-regions**, 
 filtramos la respuesta con la opción **--query** (en este caso solo queremos el nombre de las regiones “**RegionName**”) 
-y con **--output text** que la salida sea texto
+y con **--output text** que la salida sea texto.
 
-2. Encadenamos comandos con pipe **|**
+2. Encadenamos comandos con pipe **|**.
 
 3. Usamos el comando **xargs** para utilizar como argumento la salida del primer comando, y con la opción **-I** 
-para reemplazar los valores **{}**
+para reemplazar los valores **{}**.
 
 4. Finalmente usamos el comando **describe-availability-zones** con la opción **--region** para ir solicitando las AZ por cada region. 
-Filtraremos los resultados con la opción **--query**, en este caso dos columnas para que se visualice region y sus correspondientes AZ. 
-En este caso la salida conla opción **--output** en tabla para que se visualice de forma más cómoda
+Filtraremos los resultados con la opción **--query**, en este caso dos columnas para que se visualice region y sus AZ. 
+En este caso, la salida con la opción **--output** en tabla para que se visualice de forma más cómoda.
 
 5. Se podría añadir la opción **2> /dev/null** para evitar los mensajes de error ocurridos por fallos de autorización.
 ```
@@ -54,7 +54,7 @@ while read RegionName; do aws ec2 describe-availability-zones --region $RegionNa
 En este caso encadenamos con **pipes** diferentes opciones de bash (**grep**, **awk**, **condicionales** para el segundo comando). 
 Básicamente con el mismo objetivo usando los dos comandos **ec2 describe-regions** y **ec2 describe-availability-zones**.
 
-:pager: **CAPTURAS DE PANTALLA**
+:pager: ### **CAPTURAS DE PANTALLA**
 
 ![aws-caso1-ccalvo-p_1-](https://user-images.githubusercontent.com/126183973/223812445-3500bcf0-be39-4e57-8906-9973a000115e.jpg)
 
