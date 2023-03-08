@@ -40,7 +40,7 @@ while read RegionName; do aws ec2 describe-availability-zones --region $RegionNa
 En este caso encadenamos con **pipes** diferentes opciones de bash (grep, awk, condicionales para el segundo comando). 
 Básicamente con el mismo objetivo, usar los dos comandos **ec2 describe-regions** y **ec2 describe-availability-zones**
 
-:pager:
+:pager: **CAPTURAS DE PANTALLA**
 
 ![aws-caso1-ccalvo-p_1-](https://user-images.githubusercontent.com/126183973/223812445-3500bcf0-be39-4e57-8906-9973a000115e.jpg)
 
@@ -48,6 +48,6 @@ Básicamente con el mismo objetivo, usar los dos comandos **ec2 describe-regions
 
 **> RETO 2** 
 
-Script que muestre el número máximo de instancias EC2 de tipo T que tenemos permitido crear en la región de 
-North Virginia (Pista: AWS Cli permite consultar las “quotas” que tenemos asignadas por cada servicio).
+Script que muestre el número máximo de instancias EC2 de tipo T que tenemos permitido crear en la región de North Virginia
+(AWS Cli permite consultar las “quotas” que tenemos asignadas por cada servicio).
 
