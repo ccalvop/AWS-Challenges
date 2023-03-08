@@ -1,20 +1,24 @@
-> Utilizando Cloud Shell debes crear un script (Bash + AWS Cli) que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas:
+> RETO: 
+Utilizando Cloud Shell crear un script (Bash + AWS CLI) que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas.
 
->> aws ec2 describe-regions --all-regions --query "Regions[].{Name:RegionName}" --output text | xargs -I {} aws ec2 describe-availability-zones --region {} --query "AvailabilityZones[].{Zone:ZoneName, Region:RegionName}" --output table
+>> SOLUCIÓN:
+aws ec2 describe-regions --all-regions --query "Regions[].{Name:RegionName}" --output text | 
+xargs -I {} aws ec2 describe-availability-zones --region {} --query "AvailabilityZones[].{Zone:ZoneName, Region:RegionName}" --output table
 
 ec2 describe-regions - Describes the Regions that are enabled for your account
 ec2 describe-availability-zones - Describes the Availability Zones, Local Zones, and Wavelength Zones that are available to you.
 xargs - Takes in input and executes your chosen command on it
 
 
-1- Solicitamos a aws las regiones mediante el comando describe-regions , de todas las regiones con la opción --all-regions , filtramos la respuesta con la opción --query (en este caso solo queremos el nombre de las regiones “RegionName”) y con --output text que la salida sea texto.
+1- Solicitamos a aws las regiones mediante el comando describe-regions , de todas las regiones con la opción --all-regions, 
+filtramos la respuesta con la opción --query (en este caso solo queremos el nombre de las regiones “RegionName”) y con --output text que la salida sea texto.
 
 2- encadenamos comandos con pipe |
 
 3- usamos el comando xargs para utilizar como argumento la salida del primer comando, y con la opción -I para reemplazar los valores {}.
 
-4- finalmente usamos el comando describe-availability-zones con la opción --region para ir solicitando las availability zones por cada region. Filtraremos los resultados con la opción --query , en este caso dos
-columnas para que se visualice region y sus correspondientes availability zones. En este caso la salida con
-la opción --output en tabla para que se visualice de forma más cómoda.
-5- Se podría añadir la opción 2> /dev/null para evitar los mensajes de error ocurridos por fallos de
-autorización.
+4- finalmente usamos el comando describe-availability-zones con la opción --region para ir solicitando las availability zones por cada region. 
+Filtraremos los resultados con la opción --query , en este caso doscolumnas para que se visualice region y sus correspondientes availability zones. 
+En este caso la salida conla opción --output en tabla para que se visualice de forma más cómoda.
+
+5- Se podría añadir la opción 2> /dev/null para evitar los mensajes de error ocurridos por fallos de autorización.
