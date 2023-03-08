@@ -31,7 +31,7 @@ En este caso la salida conla opción **--output** en tabla para que se visualice
 
 (*)Para guardar los comandos como un script, añadimos una primera línea `#!/bin/bash´ para que pueda ser ejecutado por bash.
 
-** 👍 OTRO POSIBLE SCRIPT**
+👍**OTRO POSIBLE SCRIPT**
 
 `ec2 describe-regions --all-regions | grep "RegionName" | awk '{print $2}' | tr -d "\"," | 
 while read RegionName; do aws ec2 describe-availability-zones --region $RegionName --query
