@@ -1,8 +1,8 @@
 ![AWS_CLI_+_BASH](https://user-images.githubusercontent.com/126183973/223797292-3622deb1-face-47a9-b925-9b27d986cbaa.png)
 
-**> RETO** 
+**> RETO 1** 
 
-Utilizando Cloud Shell crear un script (Bash + AWS CLI) que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas.
+Crear un script utilizando Cloud Shell que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas.
 
 **> SOLUCIÓN: _SCRIPT_**
 
@@ -39,3 +39,15 @@ while read RegionName; do aws ec2 describe-availability-zones --region $RegionNa
 
 En este caso encadenamos con **pipes** diferentes opciones de bash (grep, awk, condicionales para el segundo comando). 
 Básicamente con el mismo objetivo, usar los dos comandos **ec2 describe-regions** y **ec2 describe-availability-zones**
+
+:pager:
+
+![aws-caso1-ccalvo-p_1-](https://user-images.githubusercontent.com/126183973/223812445-3500bcf0-be39-4e57-8906-9973a000115e.jpg)
+
+![aws-caso1-ccalvo-p_2-](https://user-images.githubusercontent.com/126183973/223812615-5c7e2445-7866-47ea-8e74-18c3265991ba.jpg)
+
+**> RETO 2** 
+
+Script que muestre el número máximo de instancias EC2 de tipo T que tenemos permitido crear en la región de 
+North Virginia (Pista: AWS Cli permite consultar las “quotas” que tenemos asignadas por cada servicio).
+
