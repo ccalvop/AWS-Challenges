@@ -38,7 +38,7 @@ En este caso la salida conla opción **--output** en tabla para que se visualice
 
 **_xargs_** - Takes in input and executes your chosen command on it
 
-(*)Guardamos los comandos en un archivo y añadimos una primera línea `#!/bin/bash` para que pueda ser posteriormente ejecutado como un script por bash.
+_(*)Guardamos los comandos en un archivo y añadimos una primera línea `#!/bin/bash` para que pueda ser posteriormente ejecutado como un script por bash._
 
 👍**OTRO POSIBLE SCRIPT**
 
