@@ -1,6 +1,13 @@
 ![AWS_CLI_+_BASH](https://user-images.githubusercontent.com/126183973/223797292-3622deb1-face-47a9-b925-9b27d986cbaa.png)
 
-**> RETO 1** 
+Lo primero vamos a definir CLI y Bash antes de resolver dos pequeños retos:
+
+**CLI** significa Command Line Interface, que en español se traduce como Interfaz de Línea de Comandos. En el contexto de AWS (Amazon Web Services), CLI es una herramienta que permite interactuar con los servicios de AWS a través de la línea de comandos de un terminal.
+
+**BASH** es una abreviatura de "Bourne-Again SHell", lo que significa que es una versión mejorada del shell original de Unix, llamado "sh" o Bourne shell.
+Bash es un shell o intérprete de comandos de Unix y sistemas basados en Unix, como Linux y macOS. Shell se refiere a la interfaz de línea de comandos (CLI) que permite a los usuarios interactuar con el sistema operativo a través de comandos de texto.
+
+# **> RETO 1** 
 
 Crear un script utilizando Cloud Shell que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas.
 
@@ -46,7 +53,7 @@ Básicamente con el mismo objetivo, usar los dos comandos **ec2 describe-regions
 
 ![aws-caso1-ccalvo-p_2-](https://user-images.githubusercontent.com/126183973/223812615-5c7e2445-7866-47ea-8e74-18c3265991ba.jpg)
 
-**> RETO 2** 
+# **> RETO 2** 
 
 Script que muestre el número máximo de instancias EC2 de tipo T que tenemos permitido crear en la región de North Virginia
 (AWS Cli permite consultar las “quotas” que tenemos asignadas por cada servicio).
