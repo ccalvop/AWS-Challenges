@@ -15,10 +15,10 @@ xargs -I {} aws ec2 describe-availability-zones --region {} --query "Availabilit
 
 **_xargs_** - Takes in input and executes your chosen command on it
 
-1. Solicitamos a aws las regiones mediante el comando describe-regions , de todas las regiones con la opción --all-regions, 
-filtramos la respuesta con la opción --query (en este caso solo queremos el nombre de las regiones “RegionName”) y con --output text que la salida sea texto.
+1. Solicitamos a aws las regiones mediante el comando **describe-regions** , de todas las regiones con la opción **--all-regions**, 
+filtramos la respuesta con la opción **--query** (en este caso solo queremos el nombre de las regiones “**RegionName**”) y con **--output text** que la salida sea texto.
 
-2. Encadenamos comandos con pipe |
+2. Encadenamos comandos con pipe **|**
 
 3. Usamos el comando xargs para utilizar como argumento la salida del primer comando, y con la opción -I para reemplazar los valores {}.
 
@@ -31,6 +31,7 @@ En este caso la salida conla opción --output en tabla para que se visualice de 
 (*)Para guardar los comandos como un script, añadimos una primera línea `#!/bin/bash´ para que pueda ser ejecutado por bash.
 
 **> OTRAS POSIBLES SOLUCIONES:**
+
 `ec2 describe-regions --all-regions | grep "RegionName" | awk '{print $2}' | tr -d "\"," | 
 while read RegionName; do aws ec2 describe-availability-zones --region $RegionName --query
 "AvailabilityZones[].{Region:RegionName, Zone:ZoneName}" --output table; done`
