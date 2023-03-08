@@ -19,9 +19,9 @@ Crear un script utilizando Cloud Shell que muestre cada una de las regiones de A
 xargs -I {} aws ec2 describe-availability-zones --region {} --query "AvailabilityZones[].{Zone:ZoneName, Region:RegionName}" --output table`
 
 ```
-1. Solicitamos a aws las regiones mediante el comando **describe-regions** , de todas las regiones con la opción **--all-regions**, 
-filtramos la respuesta con la opción **--query** (en este caso solo queremos el nombre de las regiones “**RegionName**”) 
-y con **--output text** que la salida sea texto.
+1. Solicitamos a aws las regiones mediante el comando **describe-regions** , de todas las regiones con la opción 
+**--all-regions**, filtramos la respuesta con la opción **--query** (en este caso solo queremos el nombre 
+de las regiones “**RegionName**”) y con **--output text** que la salida sea texto.
 
 2. Encadenamos comandos con pipe **|**.
 
