@@ -13,7 +13,7 @@ Crear un script utilizando Cloud Shell que muestre cada una de las regiones de A
 
 **> SOLUCIÓN: _SCRIPT_**
 
-![script1](https://user-images.githubusercontent.com/126183973/223822385-a8381888-f752-4005-86fc-f6905133b9ab.png)
+![script1](https://user-images.githubusercontent.com/126183973/224083507-ae5be1f7-f54c-4273-b40e-4f021e87b2e1.png)
 
 `aws ec2 describe-regions --all-regions --query "Regions[].{Name:RegionName}" --output text | 
 xargs -I {} aws ec2 describe-availability-zones --region {} --query "AvailabilityZones[].{Zone:ZoneName, Region:RegionName}" --output table`
@@ -35,13 +35,13 @@ y sus AZ. En este caso, la salida con la opción --output en tabla para que se v
 5. Se podría añadir la opción **2> /dev/null** para evitar los mensajes de error ocurridos por fallos de autorización.
 ```
 
-**_ec2 describe-regions_** - Describes the Regions that are enabled for your account
+**_ec2 describe-regions_** - comando que devuelve una lista de todas las regiones disponibles en la cuenta de AWS, incluyendo su nombre, identificador y estado.
 
-**_ec2 describe-availability-zones_** - Describes the Availability Zones, Local Zones, and Wavelength Zones that are available to you 
+**_ec2 describe-availability-zones_** - comando que devuelve una lista de todas las zonas de disponibilidad en una región específica, incluyendo su nombre, identificador, estado, tipos de instancias admitidos, entre otros detalles.
 
-**_xargs_** - Takes in input and executes your chosen command on it
+**_xargs_** - comando en Bash que se utiliza para tomar la salida de un comando y convertirla en argumentos para otro comando.
 
-:books: _(*)Guardamos los comandos en un archivo y añadimos una primera línea `#!/bin/bash` para que pueda ser posteriormente ejecutado como un script por bash._
+:books: _Podemos guardar los comandos en un archivo y añadir una primera línea `#!/bin/bash` para que pueda ser posteriormente ejecutado como un script por bash._
 
 👍**OTRO POSIBLE _SCRIPT_**
 
