@@ -3,3 +3,4 @@
 ## **AWS cloud exercises and developments**
 
 1. [AWS CLI+Bash](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_CLI%2BBash.md)
+2. [AWSInfraestructura Basica] (https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_InfraestructuraBasica.md)
