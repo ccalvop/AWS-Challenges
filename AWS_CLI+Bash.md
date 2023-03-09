@@ -9,7 +9,7 @@ Bash es un shell o intérprete de comandos de Unix y sistemas basados en Unix, c
 
 # **> RETO 1** 
 
-Crear un script utilizando Cloud Shell que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas.
+Crear un script y utilizarlo en la CloudShell de AWS que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas.
 
 **> SOLUCIÓN: _SCRIPT_**
 
