@@ -43,6 +43,12 @@ y sus AZ. En este caso, la salida con la opción --output en tabla para que se v
 
 :books: _Podemos guardar los comandos en un archivo y añadir una primera línea `#!/bin/bash` para que pueda ser posteriormente ejecutado como un script por bash._
 
+:pager: **CAPTURAS DE PANTALLA**
+
+![aws-caso1-ccalvo-p_1-](https://user-images.githubusercontent.com/126183973/223812445-3500bcf0-be39-4e57-8906-9973a000115e.jpg)
+
+![aws-caso1-ccalvo-p_2-b](https://user-images.githubusercontent.com/126183973/224085666-79a514a1-afb4-4235-a19c-847bdd2cbcec.jpg)
+
 👍**OTRO POSIBLE _SCRIPT_**
 
 ![script2](https://user-images.githubusercontent.com/126183973/223822893-25792f6b-ddf5-4057-945c-e4043c0aade1.png)
@@ -53,12 +59,6 @@ while read RegionName; do aws ec2 describe-availability-zones --region $RegionNa
 
 En este caso encadenamos con **pipes** diferentes opciones de bash (**grep**, **awk**, **condicionales** para el segundo comando). 
 Básicamente con el mismo objetivo usando los dos comandos **ec2 describe-regions** y **ec2 describe-availability-zones**.
-
-:pager: **CAPTURAS DE PANTALLA**
-
-![aws-caso1-ccalvo-p_1-](https://user-images.githubusercontent.com/126183973/223812445-3500bcf0-be39-4e57-8906-9973a000115e.jpg)
-
-![aws-caso1-ccalvo-p_2-](https://user-images.githubusercontent.com/126183973/223812615-5c7e2445-7866-47ea-8e74-18c3265991ba.jpg)
 
 # **> RETO 2** 
 
