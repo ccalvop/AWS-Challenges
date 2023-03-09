@@ -67,5 +67,5 @@ _(AWS Cli permite consultar las “quotas” que tenemos asignadas por cada serv
 
 **> SOLUCIÓN: _SCRIPT_**
 
-`aws service-quotas list-service-quotas --service-code ec2 --region us-east-1 --query
-"Quotas[?contains(QuotaName,'T,')].{QuotaName:QuotaName,Value:Value}" --output table`
+`aws service-quotas list-service-quotas --service-code ec2 --region us-east-1 --query "Quotas[?contains(QuotaName,'T,')].{QuotaName:QuotaName,Value:Value}"
+--output table`
