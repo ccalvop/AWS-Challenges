@@ -41,7 +41,7 @@ y sus AZ. En este caso, la salida con la opción --output en tabla para que se v
 
 **_xargs_** - Takes in input and executes your chosen command on it
 
-_(*)Guardamos los comandos en un archivo y añadimos una primera línea `#!/bin/bash` para que pueda ser posteriormente ejecutado como un script por bash._
+:books: _(*)Guardamos los comandos en un archivo y añadimos una primera línea `#!/bin/bash` para que pueda ser posteriormente ejecutado como un script por bash._
 
 👍**OTRO POSIBLE _SCRIPT_**
 
