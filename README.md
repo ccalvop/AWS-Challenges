@@ -7,3 +7,4 @@
 3. [AWS Inventario en EC2 + Base de datos RDS](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_InventarioEC2%2BDatabaseRDS.md)
 4. [AWS S3: versionado y replicación](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_S3.md)
 5. [AWS Gestión de costes](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_Costes.md)
+6. [AWS CloudFormation](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_Automatizacion.md)
