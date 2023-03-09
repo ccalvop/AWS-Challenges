@@ -5,6 +5,6 @@ En este ejemplo vamos a desplegar una infraestructura básica en AWS que consta 
 
 ```vpc, internet gateway, subredes, las tablas de enrutamiento y los security groups``` a través de **consola web**
 
-```instancias ec2``` a través de **CLI**
+```instancias EC2``` a través de **CLI**
 
 
