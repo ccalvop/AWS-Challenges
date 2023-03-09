@@ -41,13 +41,13 @@ y sus AZ. En este caso, la salida con la opción --output en tabla para que se v
 
 **_xargs_** - comando en Bash que se utiliza para tomar la salida de un comando y convertirla en argumentos para otro comando.
 
-:books: _Podemos guardar los comandos en un archivo y añadir una primera línea `#!/bin/bash` para que pueda ser posteriormente ejecutado como un script por bash._
-
 :pager: **CAPTURAS DE PANTALLA**
 
 ![aws-caso1-ccalvo-p_1-](https://user-images.githubusercontent.com/126183973/223812445-3500bcf0-be39-4e57-8906-9973a000115e.jpg)
 
 ![aws-caso1-ccalvo-p_2-b](https://user-images.githubusercontent.com/126183973/224085666-79a514a1-afb4-4235-a19c-847bdd2cbcec.jpg)
+
+:books: _Podemos guardar los comandos en un archivo y añadir una primera línea `#!/bin/bash` para que pueda ser posteriormente ejecutado como un script por bash._
 
 👍**OTRO POSIBLE _SCRIPT_**
 
