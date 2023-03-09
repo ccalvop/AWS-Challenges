@@ -5,3 +5,4 @@
 1. [AWS CLI+Bash](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_CLI%2BBash.md)
 2. [AWS Infraestructura Básica](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_InfraestructuraBasica.md)
 3. [AWS Inventario en EC2 + Base de datos RDS](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_InventarioEC2%2BDatabaseRDS.md)
+4. [AWS S3: versionado y replicación](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_S3.md)
