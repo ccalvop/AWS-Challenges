@@ -43,7 +43,7 @@ y sus AZ. En este caso, la salida con la opción --output en tabla para que se v
 
 _(*)Guardamos los comandos en un archivo y añadimos una primera línea `#!/bin/bash` para que pueda ser posteriormente ejecutado como un script por bash._
 
-👍**OTRO POSIBLE SCRIPT**
+👍**OTRO POSIBLE _SCRIPT_**
 
 ![script2](https://user-images.githubusercontent.com/126183973/223822893-25792f6b-ddf5-4057-945c-e4043c0aade1.png)
 
@@ -63,7 +63,9 @@ Básicamente con el mismo objetivo usando los dos comandos **ec2 describe-region
 # **> RETO 2** 
 
 Crear un script que muestre el número máximo de instancias EC2 de tipo T que tenemos permitido crear en la región de North Virginia
-(AWS Cli permite consultar las “quotas” que tenemos asignadas por cada servicio).
+_(AWS Cli permite consultar las “quotas” que tenemos asignadas por cada servicio)._
 
 **> SOLUCIÓN: _SCRIPT_**
 
+`aws service-quotas list-service-quotas --service-code ec2 --region us-east-1 --query
+"Quotas[?contains(QuotaName,'T,')].{QuotaName:QuotaName,Value:Value}" --output table`
