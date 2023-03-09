@@ -60,6 +60,10 @@ while read RegionName; do aws ec2 describe-availability-zones --region $RegionNa
 En este caso encadenamos con **pipes** diferentes opciones de bash (**grep**, **awk**, **condicionales** para el segundo comando). 
 Básicamente con el mismo objetivo usando los dos comandos **ec2 describe-regions** y **ec2 describe-availability-zones**.
 
+**_grep_** - comando en Bash que busca en el contenido de un archivo o **en la salida** de otro comando para encontrar líneas que contengan una cadena de texto específica o un patrón de expresión regular (grep - global regular expression print).
+
+**_awk_** - comando en Bash que toma la entrada de texto línea por línea y la divide en campos, utilizando un separador. Luego, awk aplica patrones y acciones para procesar y manipular los datos en cada línea
+
 # **> RETO 2** 
 
 Crear un script que muestre el número máximo de instancias EC2 de tipo T que tenemos permitido crear en la región de North Virginia
