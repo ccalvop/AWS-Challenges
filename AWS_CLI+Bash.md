@@ -41,7 +41,7 @@ y sus AZ. En este caso, la salida con la opción --output en tabla para que se v
 
 **_xargs_** - comando en Bash que se utiliza para tomar la salida de un comando y convertirla en argumentos para otro comando.
 
-:pager: **CAPTURAS DE PANTALLA**
+:pager: **CAPTURA DE PANTALLA**
 
 ![aws-caso1-ccalvo-p_1-](https://user-images.githubusercontent.com/126183973/223812445-3500bcf0-be39-4e57-8906-9973a000115e.jpg)
 
@@ -83,4 +83,9 @@ _(AWS Cli permite consultar las “quotas” que tenemos asignadas por cada serv
 con valores ‘T’, y el --output la salida en formato tabla.
 ```
 
-**_service-quotas_** - Lists the applied quota values for the specified AWS service.
+**_service-quotas_** - comando que permite ver y administrar los limites de servicio de los diferentes servicios de AWS.
+
+:pager: **CAPTURAS DE PANTALLA**
+
+![aws-caso1-ccalvo-p_3-](https://user-images.githubusercontent.com/126183973/224088845-37482600-75bd-4ad0-a0e3-f68e2cb36646.jpg)
+
