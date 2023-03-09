@@ -67,5 +67,16 @@ _(AWS Cli permite consultar las “quotas” que tenemos asignadas por cada serv
 
 **> SOLUCIÓN: _SCRIPT_**
 
+![script3](https://user-images.githubusercontent.com/126183973/224081951-24c3351b-22ea-4d36-8992-5356fa7dceb8.png)
+
 `aws service-quotas list-service-quotas --service-code ec2 --region us-east-1 --query "Quotas[?contains(QuotaName,'T,')].{QuotaName:QuotaName,Value:Value}"
 --output table`
+
+```
+1. Solicitamos a aws el listado de servicios con el límite de quota
+
+2. Aplicamos varias opciones, --service-code para solo el servicio ec2, --region para la región North Virginia, --query para filtrar las QuotaName 
+con valores ‘T’, y el --output la salida en formato tabla.
+```
+
+**_service-quotas_** - Lists the applied quota values for the specified AWS service.
