@@ -79,8 +79,8 @@ _(AWS Cli permite consultar las “quotas” que tenemos asignadas por cada serv
 ```
 1. Solicitamos a aws el listado de servicios con el límite de quota
 
-2. Aplicamos varias opciones, --service-code para solo el servicio ec2, --region para la región North Virginia, --query para filtrar las QuotaName 
-con valores ‘T’, y el --output la salida en formato tabla.
+2. Aplicamos varias opciones, --service-code para solo el servicio ec2, --region para la región North Virginia, 
+--query para filtrar las QuotaName con valores ‘T’, y el --output la salida en formato tabla.
 ```
 
 **_service-quotas_** - comando que permite ver y administrar los limites de servicio de los diferentes servicios de AWS.
