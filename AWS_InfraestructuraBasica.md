@@ -3,7 +3,7 @@
 # ¿Qué podriamos definir como **infraestructura básica** en AWS?
 En este ejemplo vamos a desplegar una infraestructura básica en AWS que consta de los siguientes elementos:
 
-```vpc, internet gateway, subredes, las tablas de enrutamiento y los security groups``` a través de **consola web**
+```VPC, IG internet gateway, subredes, tablas de enrutamiento y SG security groups``` a través de **consola web**
 
 ```instancias EC2``` a través de **CLI**
 
