@@ -1,4 +1,3 @@
-:es:
 ![AWS_CLI_+_BASH](https://user-images.githubusercontent.com/126183973/223797292-3622deb1-face-47a9-b925-9b27d986cbaa.png)
 
 Vamos a definir primero que es **CLI** y **Bash** antes de resolver dos pequeños retos:
