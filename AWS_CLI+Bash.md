@@ -1,6 +1,6 @@
 ![AWS_CLI_+_BASH](https://user-images.githubusercontent.com/126183973/223797292-3622deb1-face-47a9-b925-9b27d986cbaa.png)
 
-Lo primero vamos a definir CLI y Bash antes de resolver dos pequeños retos:
+Vamos a definir primero que es **CLI** y **Bash** antes de resolver dos pequeños retos:
 
 **CLI** significa Command Line Interface, que en español se traduce como Interfaz de Línea de Comandos. En el contexto de AWS (Amazon Web Services), CLI es una herramienta que permite interactuar con los servicios de AWS a través de la línea de comandos de un terminal.
 
@@ -9,7 +9,7 @@ Bash es un shell o intérprete de comandos de Unix y sistemas basados en Unix, c
 
 # **> RETO 1** 
 
-Crear un script en CloudShell de AWS que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas.
+Crear un script para el CloudShell de AWS que muestre cada una de las regiones de AWS junto con sus zonas de disponibilidad asociadas.
 
 **> SOLUCIÓN: _SCRIPT_**
 
