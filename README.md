@@ -8,3 +8,4 @@
 4. [AWS S3: versionado y replicación](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_S3.md)
 5. [AWS Gestión de costes](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_Costes.md)
 6. [AWS CloudFormation](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_Automatizacion.md)
+7. [AWS CloudFront + web S3](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_CloudFront%2BWeb_S3.md)
