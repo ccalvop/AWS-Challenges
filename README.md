@@ -1,4 +1,6 @@
-![AWS-Challengesby_Carlos_Calvo](https://user-images.githubusercontent.com/126183973/223799982-27810622-2dbc-4b6e-adee-425ba423dd10.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/126183973/223799982-27810622-2dbc-4b6e-adee-425ba423dd10.png" />
+</p>
 
 ## **AWS Cloud Exercises and Developments**
 
