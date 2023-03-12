@@ -2,7 +2,7 @@
 
 # Automatización con CloudFormation
 
-### Plantilla CloudFormation que incluya:
+### Vamos a definir una plantilla en CloudFormation con la infraestructura básica para tener un servidor web Nginx
   -**VPC** con 2 **SUBNETS** en diferentes zonas de disponibilidad (AZ).
   
   -**AG** Autoscaling Group que despliegue entre 2 y 4 instanacias EC2 con AMI Amazon Linux 2 (EC2 tamaño t3.micro).
