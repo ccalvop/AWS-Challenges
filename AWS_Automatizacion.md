@@ -14,7 +14,7 @@ Crear una configuración básica en CloudFormation para desplegar una aplicació
   
   -**SG** Security Group que solo permita el acceso por el puerto 80 desde cualquier IP.
   
-La VPC tiene dos subredes ubicadas en diferentes zonas de disponibilidad (AZ) para proporcionar redundancia y tolerancia a fallos. La configuración incluye un grupo de autoescalado (ASG) que despliega instancias EC2 en función de la carga del tráfico. Las instancias tienen instalado un servidor web Nginx que se configura mediante el script de usuario (Userdata) y se les asigna una dirección IP pública. La seguridad se gestiona mediante un grupo de seguridad (SG) que permite el acceso al puerto 80 desde cualquier dirección IP.
+La VPC tendrá dos subredes ubicadas en diferentes zonas de disponibilidad (AZ) para proporcionar redundancia y tolerancia a fallos. La configuración incluye un grupo de autoescalado (ASG) que desplegará instancias EC2 en función de la carga del tráfico. Las instancias tendrán instalado un servidor web Nginx que se configurará mediante el script de usuario (Userdata) y se les asignará una dirección IP pública. La seguridad se gestionará mediante un grupo de seguridad (SG) que permitirá el acceso al puerto 80 desde cualquier dirección IP.
  
 **> Definimos el template de CloudFormation en código yaml** (añadiendo comentarios para facilitar la comprensión):
 
