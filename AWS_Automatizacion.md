@@ -15,9 +15,10 @@
 
 ![template1](https://user-images.githubusercontent.com/126183973/224559743-30b56d3a-29b0-450c-88cb-f408f443e0e8.png)
 
-:pager: **CAPTURA DE PANTALLA**
+:pager: **CAPTURAS DE PANTALLA**
 
 ![aws-caso6-ccalvo-p_1-](https://user-images.githubusercontent.com/126183973/224560266-3d06c4e8-266c-4540-a32a-e6292319d131.jpg)
+_Creamos un nuevo stack en CloudFormation a partir del template (plantilla) en formato yaml guardada anteriormente_
 
 ![aws-caso6-ccalvo-p_2-](https://user-images.githubusercontent.com/126183973/224560278-ef887ace-d831-4f1f-bfa6-0418ad334468.jpg)
 
