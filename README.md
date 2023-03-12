@@ -4,7 +4,7 @@
 
 ## **AWS Cloud Exercises and Developments**
 
-¡Bienvenidos a mi repositorio sobre AWS! Aquí encontrarás diferentes ejercicios que he realizado para poner en práctica mis habilidades en AWS. Cada ejercicio es un ejemplo de cómo he aplicado mis conocimientos para diseñar soluciones para diferentes casos de uso en la nube de AWS. Espero que estos ejercicios sirvan como guía para aquellos que buscan aprender sobre AWS.
+¡Bienvenidos a mi repositorio de AWS! Aquí encontrarás diferentes ejercicios que he realizado para poner en práctica mis habilidades en AWS. Cada ejercicio es un ejemplo de cómo he aplicado mis conocimientos para diseñar soluciones para diferentes casos de uso en la nube de AWS. Espero que estos ejercicios sirvan como guía para aquellos que buscan aprender sobre AWS.
 
 1. [AWS CLI+Bash](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_CLI%2BBash.md)
 2. [AWS Infraestructura Básica](https://github.com/ccalvop/AWS-Challenges/blob/main/AWS_InfraestructuraBasica.md)
