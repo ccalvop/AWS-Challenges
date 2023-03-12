@@ -4,7 +4,7 @@
 
 ### RETO > CloudFormation
 
-Configuración básica en CloudFormation para desplegar una aplicación web en una red virtual privada (VPC) con alta disponibilidad.
+Crear una configuración básica en CloudFormation para desplegar una aplicación web en una red virtual privada (VPC) con alta disponibilidad con los siguientes elementos:
 
    -**VPC** con 2 **SUBNETS** en diferentes zonas de disponibilidad (AZ).
   
