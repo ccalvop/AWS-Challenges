@@ -4,8 +4,11 @@
 
 ### Plantilla CloudFormation que incluya:
   -**VPC** con 2 **SUBNETS** en diferentes zonas de disponibilidad (AZ).
+  
   -**AG** Autoscaling Group que despliegue entre 2 y 4 instanacias EC2 con AMI Amazon Linux 2 (EC2 tamaño t3.micro).
+  
   -**EC2** instancias tendrán instalado servidor web Nginx (Userdata) con IP pública asignada.
+  
   -**SG** Security Group que solo permita el acceso por el puerto 80 desde cualquier IP.
   
 Definimos en código yaml el template de CloudFormation, añadiendo comentarios para facilitar la comprensión:
