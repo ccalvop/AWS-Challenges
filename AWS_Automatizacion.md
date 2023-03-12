@@ -17,11 +17,14 @@
 
 :pager: **CAPTURAS DE PANTALLA**
 
+_Stacks: creamos un nuevo stack en CloudFormation a partir del template (plantilla) en formato yaml guardada anteriormente_
 ![aws-caso6-ccalvo-p_1-](https://user-images.githubusercontent.com/126183973/224560266-3d06c4e8-266c-4540-a32a-e6292319d131.jpg)
-_Creamos un nuevo stack en CloudFormation a partir del template (plantilla) en formato yaml guardada anteriormente_
 
+_Resources: podemos observar todos los recursos desplegados_
 ![aws-caso6-ccalvo-p_2-](https://user-images.githubusercontent.com/126183973/224560278-ef887ace-d831-4f1f-bfa6-0418ad334468.jpg)
 
+_Para comprobar que el despliegue funciona, copiamos la IP pública de la instancia_
 ![aws-caso6-ccalvo-p_3-](https://user-images.githubusercontent.com/126183973/224560286-c450eea8-da7a-4751-a739-6175544e6d7d.jpg)
 
+_Pegamos la IP en un navegador y observamos que el servidor Nginx funciona correctamente_
 ![aws-caso6-ccalvo-p_4](https://user-images.githubusercontent.com/126183973/224560294-71746857-db89-4c9c-a0fe-c66469efcc38.jpg)
