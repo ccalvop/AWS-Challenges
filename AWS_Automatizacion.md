@@ -2,8 +2,11 @@
 
 # Automatización con CloudFormation
 
-### Vamos a definir una plantilla en CloudFormation para tener un servidor web Nginx, que incluirá:
-  -**VPC** con 2 **SUBNETS** en diferentes zonas de disponibilidad (AZ).
+### RETO > CloudFormation
+
+Configuración básica en CloudFormation para desplegar una aplicación web en una red virtual privada (VPC) con alta disponibilidad.
+
+   -**VPC** con 2 **SUBNETS** en diferentes zonas de disponibilidad (AZ).
   
   -**AG** Autoscaling Group que despliegue entre 2 y 4 instanacias EC2 con AMI Amazon Linux 2 (EC2 tamaño t3.micro).
   
@@ -11,9 +14,13 @@
   
   -**SG** Security Group que solo permita el acceso por el puerto 80 desde cualquier IP.
   
+La VPC tiene dos subredes ubicadas en diferentes zonas de disponibilidad (AZ) para proporcionar redundancia y tolerancia a fallos. La configuración incluye un grupo de autoescalado (ASG) que despliega instancias EC2 en función de la carga del tráfico. Las instancias tienen instalado un servidor web Nginx que se configura mediante el script de usuario (Userdata) y se les asigna una dirección IP pública. La seguridad se gestiona mediante un grupo de seguridad (SG) que permite el acceso al puerto 80 desde cualquier dirección IP.
+ 
 **> Definimos el template de CloudFormation en código yaml** (añadiendo comentarios para facilitar la comprensión):
 
 ![template1](https://user-images.githubusercontent.com/126183973/224559743-30b56d3a-29b0-450c-88cb-f408f443e0e8.png)
+
+Esta **configuración básica** es adecuada para aplicaciones web simples que no tienen muchos requisitos de escalabilidad. El **Autoscaling Group** permite escalar automáticamente el número de instancias de EC2 en función de la carga del tráfico para garantizar un alto rendimiento y disponibilidad. La utilización de varias subredes ubicadas en diferentes zonas de disponibilidad asegura la **redundancia y la tolerancia a fallos**, lo que garantiza que la aplicación siga siendo accesible en caso de interrupciones en una zona de disponibilidad. El **servidor web Nginx** se puede personalizar y configurar según las necesidades de la aplicación y se ejecuta en la imagen de máquina virtual de Amazon Linux 2.
 
 :pager: **CAPTURAS DE PANTALLA**
 
