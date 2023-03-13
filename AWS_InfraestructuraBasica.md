@@ -12,7 +12,7 @@ En este ejemplo vamos a desplegar una infraestructura básica en AWS que consta 
 
 :two: Crear IG **Internet Gateway** y adjuntarlo (Attach) al VPC creado anteriormente _(VPC-caso2)_
 ![aws-caso2-ccalvo-p_2-](https://user-images.githubusercontent.com/126183973/224799986-2faa8d18-5175-4f2b-bb3b-33105999e7e4.jpg)
-_ *Si  quisieramos que las subredes privadas tuvieran acceso a internet previniendo que desde el acceso se pudieran conectar a ellas, entonces creariamos NAT Gateway_
+_*Si  quisieramos que las subredes privadas tuvieran acceso a internet previniendo que desde el acceso se pudieran conectar a ellas, entonces creariamos NAT Gateway_
 
 :three: Crear subredes (**Subnets**) con direcciones IP correctas (10.0.X.0/24) en 2 zonas de disponibilidad AZ
 ![aws-caso2-ccalvo-p_3-](https://user-images.githubusercontent.com/126183973/224800342-bc8e1abd-25fe-4aa8-bc8e-f27edf6991cb.jpg)
