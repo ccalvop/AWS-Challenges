@@ -7,6 +7,6 @@ En este ejemplo vamos a desplegar una infraestructura básica en AWS que consta 
 
 ```instancias EC2``` a través de **CLI**
 
-1- Crear una VPC
+:one: Crear una VPC
 ![aws-caso2-ccalvo-p_1-](https://user-images.githubusercontent.com/126183973/224799344-3db53379-c9b3-4e2b-905b-f0b7dd46bfb5.jpg)
 
