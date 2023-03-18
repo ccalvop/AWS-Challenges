@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/126183973/223799982-27810622-2dbc-4b6e-adee-425ba423dd10.png" />
 </p>
 
-## **AWS Cloud Exercises and Developments**
+## **AWS Cloud Challenges and Developments**
 
 ¡Bienvenidos a mi repositorio de AWS! Aquí encontrarás diferentes ejercicios que he realizado para poner en práctica mis habilidades en AWS. Cada ejercicio es un ejemplo de cómo he aplicado mis conocimientos para diseñar soluciones para diferentes casos de uso en la nube de AWS. Espero que estos ejercicios sirvan como guía para aquellos que buscan aprender sobre AWS.
 
